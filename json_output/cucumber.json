@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validate login Page",
+        "description": "",
+        "id": "cucumber-pom;validate-login-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12036496300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens browser",
+            "match": {
+              "location": "LoginStepDefinition.user_opens_browser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17773700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "opens url",
+            "match": {
+              "location": "LoginStepDefinition.opens_url()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on login page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 581400,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.sendKeys(Unknown Source)\r\n\tat com.qa.pages.LoginPage.login(LoginPage.java:34)\r\n\tat com.qa.stepDefinition.LoginStepDefinition.enters_username_and_password(LoginStepDefinition.java:37)\r\n\tat ✽.Then enters username and password and login(C:/Java Selenium/CucumberFramework/CucumberPOMConcepts/src/main/java/com/qa/features/login.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "enters username and password and login",
+            "match": {
+              "location": "LoginStepDefinition.enters_username_and_password()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Cucumber POM",
+    "description": "",
+    "id": "cucumber-pom",
+    "keyword": "Feature",
+    "uri": "C:/Java Selenium/CucumberFramework/CucumberPOMConcepts/src/main/java/com/qa/features/login.feature"
+  }
+]
